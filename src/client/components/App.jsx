@@ -1,12 +1,13 @@
 import React from 'react';
 import Button from './Button';
+import Login from './Login';
 
 export default class App extends React.Component {
   render() {
     return (
-     <div style={{textAlign: 'center'}}>
-        <h1>Hello World</h1>
-        <Button />
-      </div>);
+     <div>
+        <Login />
+     </div>
+    );
   }
 }
