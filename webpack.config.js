@@ -15,7 +15,10 @@ const APP_DIR = path.resolve(__dirname, 'src/client');
 
 const config = {
     devtool: 'cheap-module-source-map',
-    entry: APP_DIR + '/index.js',
+    entry: [
+        'babel-polyfill',
+        APP_DIR + '/index.js',
+    ],
     output: {
         path: BUILD_DIR,
         filename: 'index_bundle.js'
@@ -36,7 +39,10 @@ const config = {
             }
         ]
     },
-    plugins: [HtmlWebpackPluginConfig]
+    plugins: [HtmlWebpackPluginConfig],
+    devServer: {
+        historyApiFallback: true,
+    }
 };
 
 module.exports = config;

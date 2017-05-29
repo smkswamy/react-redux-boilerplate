@@ -6,13 +6,15 @@ const initialState = {
     password : ''
 };
 
-const reducer = (state = initialState, action) => {
+const login = (state = initialState, action) => {
     const { type, payload } = action;
 
-    switch(action) {
+    switch(type) {
         case ActionConstants.LOGIN_OPTIONS:
-            return state.merge(payload);
+            return Object.assign({}, state, payload);
+        default :
+            return state;
     }
 };
 
-export default reducer;
+export default login;

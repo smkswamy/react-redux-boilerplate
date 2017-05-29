@@ -1,4 +1,4 @@
-import * as ActionConstants from '../constants';
+import * as ActionConstants from '../constants/ActionConstants';
 
 export const loginOptions = payload => {
     return {
