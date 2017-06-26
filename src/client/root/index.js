@@ -3,6 +3,7 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import LoginContainer from '../containers/login';
 import DashBoardContainer from '../containers/dashboard';
+import VisitorDashBoardContainer from '../containers/visitor-dashboard';
 
 
 const App = (store) => {
@@ -11,6 +12,7 @@ const App = (store) => {
             <Route exact={true} path="/" component={DashBoardContainer} />
             <Route path="/login" component={LoginContainer} />
             <Route path="/dashboard" component={DashBoardContainer} />
+            <Route path="/visitor" component={VisitorDashBoardContainer} />
         </div>
     )
 }
