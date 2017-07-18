@@ -5,7 +5,7 @@ export default class Button extends React.Component {
   render() {
     return (
      <button>
-        Button
+        Button1
       </button>);
   }
 }
