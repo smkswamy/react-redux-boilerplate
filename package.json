@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env BABEL_ENV=development NODE_ENV=development webpack-dev-server"
+    "start": "cross-env BABEL_ENV=development NODE_ENV=development webpack-dev-server",
+    "build": "webpack -p"
   },
   "author": "mani",
   "license": "ISC",
